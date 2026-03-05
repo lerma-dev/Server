@@ -105,7 +105,6 @@ class Server {
         });
     }
 
-    //Servidor eschuchando en el puerto 5000
     listen() {
         this.app.listen(this.port, () => {
             console.log('\nLocal:',  blue + `http://${this.host}:${this.port}/`+ white);
